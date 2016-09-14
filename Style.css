@@ -1,0 +1,27 @@
+body{
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 200%
+}
+
+.textBox{
+border: 1px solid black;
+border-radius: 5px;
+}
+
+#grad {
+    height: 50px;
+    background: #a6a6a6;
+    background: -webkit-linear-gradient(#a6a6a6, #404040);
+    background: -o-linear-gradient(#a6a6a6, #404040);
+    background: -moz-linear-gradient(#a6a6a6, #404040);
+    background: linear-gradient(#a6a6a6, #404040);
+    border-radius: 5px;
+}
+
+div{
+margin-top: 100px;
+margin: auto;
+margin-bottom: 100px;
+}

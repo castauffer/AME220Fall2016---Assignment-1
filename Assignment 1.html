@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Style.css">
+    <script
+      src="https://code.jquery.com/jquery-3.1.0.js"
+      integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
+      crossorigin="anonymous">
+    </script>
+    <script>
+      function inputChanged(){
+        var x = $("#width").val() + "px";
+        $("#result").css("width", x );
+
+        var x = "#" +  $("#backgroundColor").val();
+        $("#result").css("background", x );
+
+        var x = $("#height").val() + "px";
+        $("#result").css("height", x );
+      }
+      </script>
+  </head>
+  <body>
+    <div id="grad"></div>
+    <br>
+
+      <label for="height"> Height</label>
+        <input onChange="inputChanged()" type="number" id="height" class="textBox">
+        <label for="height"> px</label>
+        <br>
+
+      <label for="width"> Width</label>
+        <input onChange="inputChanged()" type="number" id="width" class="textBox">
+        <label for="width"> px</label>
+        <br>
+
+      <label for="backgroundColor"> Background Color</label>
+        <label for="backgroundColor"> #</label>
+        <input onChange="inputChanged()" type="text" id="backgroundColor" class="textBox" >
+        <br>
+
+    <div id="result" style=height:50;width;50;background:gray></div>
+
+  </body>
+
+</html>
